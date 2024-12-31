@@ -17,7 +17,7 @@ public class LoginTest {
 	
 	@BeforeTest
 	public void launch() {
-		logger.info("In the Before Test Block");
+		logger.info("SLF4J Log: In the Before Test Block");
 		System.setProperty("webdriver.chrome.driver", "C:\\SeleniumWorkspace\\chromedriver.exe");
 		driver = new ChromeDriver();
 		driver.get("https://www.gumtree.com/login");
@@ -26,7 +26,7 @@ public class LoginTest {
 	
 	@Test
 	public void Login() {
-		logger.info("In the Test Block");
+		logger.info("SLF4J Log: In the Test Block");
 		loginPage = new LoginPage(driver);
 		loginPage.enterEmail("upadhyaysawan1234@gmail.com");
 		loginPage.enterPassword("Test@1234");
@@ -35,7 +35,7 @@ public class LoginTest {
 	
 	@AfterTest
 	public void quit() {
-		logger.info("In the After Test Block");
+		logger.info("SLF4J Log: In the After Test Block");
 		driver.quit();
 	}
 }
