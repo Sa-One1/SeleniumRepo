@@ -35,7 +35,7 @@ public class LoginTest {
 	
 	@AfterTest
 	public void quit() {
-		logger.info("New SLF4J Log: In the After Test Block");
+		logger.info("SLF4J Log: In the After Test Block");
 		driver.quit();
 	}
 }
