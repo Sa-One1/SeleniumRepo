@@ -35,8 +35,7 @@ public class LoginTest {
 	
 	@AfterTest
 	public void quit() {
-		logger.info("SLF4J Log : In the After Test Block");
-		logger.info("Added a space above and adding a new line for testing of Pull Request");
+		logger.info("SLF4J Log: In the After Test Block");
 		driver.quit();
 	}
 }
